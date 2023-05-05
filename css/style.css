@@ -84,6 +84,10 @@ body {
     display: flex;
     align-items: center;
 }
+
+.search--form i {
+    color: #000000;
+}
 .search--form label {
     background: #F2F2F2;
     width: 50px;
@@ -122,6 +126,39 @@ body {
     border-radius: 0px 15px 15px 0px;
 }
 
+/****** FILTRES SECTION ******/
+
+.filtres {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px 
+}
+
+.filtres h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.filtres i {
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+.filtres--btn {
+    margin-left: 14px;
+    padding: 4px 19px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
 
 .main-container {
     width: 100%;
