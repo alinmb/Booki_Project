@@ -83,6 +83,8 @@ body {
     height: 49px;
     display: flex;
     align-items: center;
+
+    
 }
 
 .search--form i {
@@ -100,21 +102,25 @@ body {
 }
 
 .search--form input {
-    height: 46px;
-    border: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0px;
+    height: 49px;
     outline: none ;
-    font-style: normal;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
 }
 .search--form button {
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+    display: flex;
+    align-items: center;
     color: #ffffff;
 
     background-color: #0065FC;
@@ -122,8 +128,12 @@ body {
     width: 132px;
     height: 49px;
     outline: none;
-    border: none;
+    border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
+}
+
+.search--icon {
+    display: none;
 }
 
 /****** FILTRES SECTION ******/
@@ -159,6 +169,55 @@ body {
     line-height: 20px;
     color: #000000;
 }
+
+/****** INFO SECTION ******/
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.info i {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.info--txt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.filtres--btn:hover {
+    background-color: #DEEBFF;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-container {
     width: 100%;
@@ -296,9 +355,22 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .search--icon {
+        display:block;
+        
+    }
+    .search--form i {
+        color: #ffffff;
+    }
+    .search--form button {
+        border-radius: 10px;
+    }
+    .search--txt {
+        display: none;
+    }
 }
