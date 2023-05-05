@@ -16,7 +16,53 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
+
+/****** Header ******/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--logo img{
+    padding: 30px 50px;
+    width: 61px;
+    height: 19px;
+}
+
+
+
+.header--nav {
+    padding: 0px 50px;
+    margin-top: 20px;
+    
+}
+.header--nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    left: 50px;
+    
+    margin-left: 60px; 
+}
+
+.header--nav a:hover {
+    border-top: 2px solid #0065FC;
+    padding: 18px 0;
+}
+
+.header--hebergements {
+    color: #0065FC;
+}
+
+.header--activites{
+    color: #000000;
+}
+/***********************************/
 
 .main-container {
     width: 100%;
