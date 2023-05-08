@@ -366,8 +366,17 @@ body {
 
 /****** ACTIVITES A MARSEILLE ******/
 
+.card a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.activites a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .activites {
-    
     padding: 30px;    
     margin-top: 35px;
 }
