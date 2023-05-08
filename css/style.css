@@ -16,7 +16,208 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
+
+/****** NAVIGATION ******/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav--logo img{
+    padding: 30px 50px;
+    width: 61px;
+    height: 19px;
+}
+
+
+
+.nav--right {
+    padding: 0px 50px;
+    margin-top: 20px;
+    
+}
+.nav--right a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    left: 50px;
+    
+    margin-left: 60px; 
+}
+
+.nav--right a:hover {
+    border-top: 2px solid #0065FC;
+    padding: 18px 0;
+}
+
+.nav--hebergements {
+    color: #0065FC;
+}
+
+.nav--activites{
+    color: #000000;
+}
+/****** HEADER ******/
+
+.presentation h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+}
+.presentation p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 8px 0;
+}
+/****** SEARCHBAR ******/
+
+.search--form {
+    margin: 35px 0;
+    height: 49px;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.search--form i {
+    color: #000000;
+}
+.search--form label {
+    background: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search--form input {
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0px;
+    height: 49px;
+    outline: none ;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+.search--form button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+    background-color: #0065FC;
+    padding: 15px 16px;
+    width: 132px;
+    height: 49px;
+    outline: none;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.search--icon {
+    display: none;
+}
+
+/****** FILTRES SECTION ******/
+
+.filtres {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px 
+}
+
+.filtres h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.filtres i {
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+.filtres--btn {
+    margin-left: 14px;
+    padding: 4px 19px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/****** INFO SECTION ******/
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.info i {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.info--txt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.filtres--btn:hover {
+    background-color: #DEEBFF;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-container {
     width: 100%;
@@ -28,6 +229,13 @@ body {
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+.section--plus {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 30px 0 0 0;
 }
 
 .card {
@@ -69,7 +277,40 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    padding: 0;
 }
+
+.hebergements--cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.heberements--title {
+    margin-bottom: 33px;
+}
+
+.hebergements--cards .card{
+    width: 240px;
+}
+
+
+.hebergements--cards .card-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 9px;
+    margin: 4px 15px;
+}
+
+
+.hebergements--cards img {
+    width: 240px;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -154,9 +395,22 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .search--icon {
+        display:block;
+        
+    }
+    .search--form i {
+        color: #ffffff;
+    }
+    .search--form button {
+        border-radius: 10px;
+    }
+    .search--txt {
+        display: none;
+    }
 }
