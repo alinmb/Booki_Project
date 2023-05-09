@@ -449,6 +449,51 @@ body {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+
+    /****** NAVIGATION ******/
+
+    .nav--right a:hover {
+        padding: 14px 0;
+    }
+
+    /****** FILTRES SECTION ******/
+
+    .filtres--btn {
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    /****** Hebergements ***********/
+
+    .hebergements--cards .card-subtitle {
+        font-size: 14px;
+    }
+
+    .hebergements {
+        background: red;
+    }
+    
+    .hebergements--cards {
+        gap: 15px;
+    }
+
+    .hebergements--cards .card{
+        width: 268px;
+        height: 207px;
+    }
+
+    .hebergements--cards img {
+        width: 268px;
+        height: 124px;
+    }
+
+    .hebergements-and-populaires section {
+        padding: 30px 30px 20px 30px;
+    }
+
+/******************************************************/
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -457,9 +502,32 @@ body {
         width: 100%;
     }
 
+    /****** Section populaire ******/
+
+    .populaires-cards .card {
+        margin-top: 20px;
+        width: 254px;
+        
+    }
+
+    .populaires-cards img {
+        width: 92px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .populaires-cards .card-content {
+        width: 163px;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
+        
     }
 
     .populaires-cards {
@@ -468,9 +536,6 @@ body {
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
-        width: 30%;
-    }
 
     .populaires-cards .card-title {
         font-size: 14px;
@@ -480,11 +545,27 @@ body {
         font-size: 13px;
     }
 
+    /****** ACTIVITES A MARSEILLE ******/
+
+    .activites--card {
+        width: 193px;
+        height: 270px;     
+    }
+
+    .activites--card img {
+        width: 193px;
+        height: 200px;
+    }
+
+    /****** FOOTER ******/
+    
+
+    
+    .bloc--footer{
+        width: 288px;
+        padding-left: 20px;  
+    }
 }
-
-
-
-
 
 
 /* Small devices (phones, less than 768px) */
