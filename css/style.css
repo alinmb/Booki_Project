@@ -470,10 +470,6 @@ body {
         font-size: 14px;
     }
 
-    .hebergements {
-        background: red;
-    }
-    
     .hebergements--cards {
         gap: 15px;
     }
@@ -558,8 +554,6 @@ body {
     }
 
     /****** FOOTER ******/
-    
-
     
     .bloc--footer{
         width: 288px;
