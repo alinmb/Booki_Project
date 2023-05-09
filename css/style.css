@@ -20,6 +20,28 @@ body {
     padding: 0;
 }
 
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.affi--plus {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 30px 0 0 0;
+    cursor: pointer;
+}
+
 /****** NAVIGATION ******/
 
 .nav {
@@ -32,8 +54,6 @@ body {
     width: 61px;
     height: 19px;
 }
-
-
 
 .nav--right {
     padding: 0px 50px;
@@ -62,6 +82,7 @@ body {
 .nav--activites{
     color: #000000;
 }
+
 /****** HEADER ******/
 
 .presentation h1{
@@ -76,6 +97,7 @@ body {
     line-height: 18px;
     margin: 8px 0;
 }
+
 /****** SEARCHBAR ******/
 
 .search--form {
@@ -83,8 +105,6 @@ body {
     height: 49px;
     display: flex;
     align-items: center;
-
-    
 }
 
 .search--form i {
@@ -128,7 +148,7 @@ body {
     width: 132px;
     height: 49px;
     outline: none;
-    border: 1px solid #0065FC;
+    border: 1px solid #0065fc;
     border-radius: 0px 15px 15px 0px;
 }
 
@@ -153,7 +173,6 @@ body {
 }
 
 .filtres i {
-    color: #0065FC;
     margin-right: 10px;
 }
 
@@ -186,7 +205,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0065FC;
     font-size: 12px;
     margin-right: 20px;
 }
@@ -200,46 +218,11 @@ body {
 }
 
 .filtres--btn:hover {
-    background-color: #DEEBFF;
+    background-color: #deebff;
     cursor: default;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
-.section--plus {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    margin: 30px 0 0 0;
-    cursor: pointer;
-}
+/****** Cards spécificités******/
 
 .card {
     background-color: white;
@@ -264,7 +247,8 @@ body {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
+/****** Hebergements & Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -278,6 +262,7 @@ body {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
     padding: 0;
@@ -312,12 +297,12 @@ body {
     width: 240px;
     height: 124px;
     border-radius: 20px 20px 0 0;
-    
 }
 
 
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -376,6 +361,11 @@ body {
     color: #000000;
 }
 
+.populaires-cards a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .activites {
     padding: 30px;    
     margin-top: 35px;
@@ -384,9 +374,7 @@ body {
 .cards--container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-    
+    align-items: center; 
 }
 .activites--card {
     background: #FFFFFF;
@@ -399,7 +387,6 @@ body {
 }
 
 .activites--card img {
-    
     width: 297px;
     height: 380px;
     object-fit: cover;
@@ -411,7 +398,6 @@ body {
     font-size: 16px;
     line-height: 19px;
     margin: 20px 19px;
-
 }
 
 /****** FOOTER *****/
@@ -422,8 +408,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     background: #F2F2F2;
-    
-
 }
 
 .footer--title {
@@ -437,8 +421,7 @@ body {
 .footer--list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    
+    align-items: flex-start;  
 }
 
 .footer--list a{
@@ -449,15 +432,11 @@ body {
     line-height: 19px;
     color: #000000;
     line-height: 18.78px;
-
 }
-
-
 
 .bloc--footer{
     width: 446px;
-    padding-left: 20px;
-    
+    padding-left: 20px;  
 }
 
 
@@ -465,7 +444,9 @@ body {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -500,7 +481,13 @@ body {
 
 }
 
+
+
+
+
+
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
     .search--icon {
         display:block;
