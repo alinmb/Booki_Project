@@ -312,12 +312,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
     cursor: pointer;
+    
 }
 
 .populaires-cards img {
@@ -448,7 +450,7 @@ body {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     /****** NAVIGATION ******/
 
@@ -471,6 +473,8 @@ body {
     }
 
     .hebergements--cards {
+                display: flex;
+        justify-content: center;
         gap: 15px;
     }
 
