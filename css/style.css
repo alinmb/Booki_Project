@@ -742,8 +742,37 @@ body {
     .main-container {
         width: 100%;
         padding: 0px;
+    }
+
+    /****** NAVIGATION ******/
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #D9D9D9;
+    }
+
+    .nav--right a:hover {
+        border-top: none;
+        padding: 30px 0;
+    }
+
+    .nav--right {
+        padding: 0px 0px;
+        margin-top: 0px;  
 
     }
+
+    .nav--right a{
+        left: 0px;
+        margin: 30px; 
+    }
+
 
     /****** HEADER ******/
 
@@ -904,11 +933,6 @@ body {
 
     }
       
-
-
-
-
-    
 
     /****** FOOTER *****/
 
