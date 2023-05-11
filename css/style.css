@@ -271,8 +271,8 @@ body {
 }
 
 .hebergements--cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
     gap: 30px;
     
 }
@@ -451,6 +451,45 @@ body {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
+@media screen and (max-width: 1170px) {
+        /****** ACTIVITES A MARSEILLE ******/
+
+        .activites--card {
+            width: 183px;
+            height: 260px;     
+        }
+    
+        .activites--card img {
+            width: 183px;
+            height: 190px;
+        }
+
+}
+
+/************************************************************************/
+
+@media screen and (max-width: 1294px) {
+    /****** ACTIVITES A MARSEILLE ******/
+
+    .activites--card {
+        width: 193px;
+        height: 270px;     
+    }
+
+    .activites--card img {
+        width: 193px;
+        height: 200px;
+    }
+
+    .hebergements--cards {
+        
+        justify-content: center;
+        
+    }
+
+}
+/************************************************************************/
+
 @media screen and (max-width: 1024px) {
 
     /****** NAVIGATION ******/
@@ -474,9 +513,9 @@ body {
     }
 
     .hebergements--cards {
-                display: flex;
+        grid-template-columns: repeat(auto-fill, 268px);
         justify-content: center;
-        gap: 15px;
+        gap: 30px;
     }
 
     .hebergements--cards .card{
