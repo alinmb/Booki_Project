@@ -540,6 +540,7 @@ body {
 
     .hebergements-and-populaires {
         flex-direction: column;
+        
     }
 
     .hebergements {
@@ -551,6 +552,7 @@ body {
     .populaires-cards .card {
         margin-top: 20px;
         width: 254px;
+        
         
     }
 
