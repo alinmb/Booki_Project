@@ -670,53 +670,6 @@ body {
 
 @media screen and (max-width: 768px) {
 
-    /****** NAVIGATION ******/
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-
-    .nav-logo img {
-        padding: 30px;
-    }
-
-    .nav-right {
-        padding: 0px 0px;
-        margin-top: 0px;
-    }
-
-    .nav-right a {
-        left: 0px;
-        margin-right: 35px;
-        margin-bottom: 30px;
-    }
-
-
-    /****** SEARCHBAR ******/
-    .search-icon {
-        display: block;
-    }
-
-    button .search-icon {
-        color: white;
-    }
-
-    .search-form button {
-        border-radius: 10px;
-        justify-content: center;
-        color: #ffffff;
-        width: 49px;
-        height: 49px;
-    }
-
-    .search-txt {
-        display: none;
-    }
-
     /****** FILTRES SECTION ******/
 
     .filtres {
@@ -785,9 +738,6 @@ body {
 }
 
 
-
-
-
 /******************************* MOBILES *************************************/
 
 @media screen and (max-width: 500px) {
@@ -816,6 +766,28 @@ body {
         display: block;
     }
 
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .nav-logo img {
+        padding: 30px;
+    }
+
+    .nav-right {
+        padding: 0px 0px;
+        margin-top: 0px;
+    }
+
+    .nav-right a {
+        left: 0px;
+        margin-right: 35px;
+        margin-bottom: 30px;
+    }
 
     .nav-right a:hover {
         border-top: none;
@@ -887,6 +859,27 @@ body {
         width: 162px;
         height: 50px;
         font-size: 16px;
+    }
+
+    /****** SEARCHBAR ******/
+    .search-icon {
+        display: block;
+    }
+
+    button .search-icon {
+        color: white;
+    }
+
+    .search-form button {
+        border-radius: 10px;
+        justify-content: center;
+        color: #ffffff;
+        width: 49px;
+        height: 49px;
+    }
+
+    .search-txt {
+        display: none;
     }
         
 
@@ -1096,8 +1089,6 @@ body {
         margin-left: 5px;
 
     }
-
-
 
     .hebergements-cards img {
         width: 100%;
