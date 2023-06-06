@@ -161,7 +161,7 @@ body {
     display: flex;
     align-items: center;
     color: #ffffff;
-
+    cursor: pointer;
     background-color: #0065FC;
     padding: 15px 16px;
     width: 132px;
@@ -881,7 +881,7 @@ body {
     .search-txt {
         display: none;
     }
-        
+
 
 
     /****** INFO SECTION ******/
@@ -944,7 +944,7 @@ body {
     .hebergements-cards .card {
         width: 325px;
         height: 207px;
-        
+
 
     }
 
