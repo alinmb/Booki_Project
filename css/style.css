@@ -52,10 +52,6 @@ body {
 
 /****** NAVIGATION ******/
 
-.sepa {
-    display: none;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -467,9 +463,6 @@ body {
 }
 
 
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
 /****** Media queries ***********/
 
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -753,25 +746,11 @@ body {
 
     /****** NAVIGATION ******/
 
-    .sepa {
-        width: 100%;
-        margin-top: 15px;
-        border: 10px solid;
-        border-image-slice: 1;
-        border-width: 2px;
-        border-image-source: linear-gradient(to right, #0065FC 52%, #DEEBFF 50%);
-        border-left: 0;
-        border-right: 0;
-        border-bottom: 0;
-        display: block;
-    }
-
     .nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
+        align-items: center;    
     }
 
     .nav-logo img {
@@ -779,26 +758,25 @@ body {
     }
 
     .nav-right {
-        padding: 0px 0px;
-        margin-top: 0px;
+        margin: 0px;
+        width: 100%;
+        display: flex;        
     }
 
     .nav-right a {
-        left: 0px;
-        margin-right: 35px;
-        margin-bottom: 30px;
+        margin: 0;
+        width: 50%;
+        padding: 0 0 14px 0 ;
+        border-bottom: 3px  solid #deebff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-right a:hover {
         border-top: none;
-        padding: 30px 0;
+        border-bottom: 2px solid #0065FC;
     }
-
-    .nav-right a {
-        left: 0px;
-        margin: 30px;
-    }
-
 
     /****** HEADER ******/
 
@@ -862,6 +840,7 @@ body {
     }
 
     /****** SEARCHBAR ******/
+
     .search-icon {
         display: block;
     }
