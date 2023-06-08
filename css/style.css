@@ -288,9 +288,9 @@ body {
 
 .hebergements-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 35px;
-
+    grid-template: 48% 48% / 30% 30% 30%;
+    grid-row-gap: 35px;
+    grid-column-gap: 30px;
 }
 
 .heberements-title {
@@ -298,7 +298,7 @@ body {
 }
 
 .hebergements-cards .card {
-    width: 240px;
+    
     cursor: pointer;
 }
 
@@ -306,7 +306,6 @@ body {
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
-    line-height: 9px;
     margin: 4px 15px;
 }
 
@@ -403,14 +402,16 @@ body {
     background: #FFFFFF;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
-    margin: 30px 0;
-    width: 297px;
-    height: 439px;
+    margin: 30px 30px 30px 0;
+    width: 100%;
     cursor: pointer;
+}
+.activites-card:last-child {
+     margin-right: 0 !important; 
 }
 
 .activites-card img {
-    width: 297px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -515,19 +516,13 @@ body {
         font-size: 14px;
     }
 
-    .hebergements-cards {
-        grid-template-columns: repeat(auto-fill, 268px);
-        justify-content: center;
-        gap: 30px;
-    }
-
     .hebergements-cards .card {
-        width: 268px;
+        width: 100%;
         height: 207px;
     }
 
     .hebergements-cards img {
-        width: 268px;
+        width: 100%;
         height: 124px;
     }
 
