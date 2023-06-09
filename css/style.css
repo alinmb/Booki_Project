@@ -666,7 +666,7 @@ nav, header, main, footer {
 
     .search-form {
         justify-content: center;
-        margin: 10px 0;
+        margin: 20px 0 0 0;
     }
 
     .search-icon {
@@ -692,7 +692,7 @@ nav, header, main, footer {
     /****** FILTRES SECTION ******/
 
     .filtres {
-        margin: 10px 20px;
+        margin: 15px 20px;
 
         flex-direction: column;
         align-items: flex-start;
@@ -714,7 +714,8 @@ nav, header, main, footer {
         display: flex;
         flex-basis: 100%;
         flex: 1;
-
+        align-items: center;
+        justify-content: center;
         font-size: 14px;
     }
 
@@ -756,6 +757,7 @@ nav, header, main, footer {
     .hebergements-cards {
         display: flex;
         flex-direction: column;
+        grid-row-gap: 20px;
     }
 
         /****** ACTIVITES ******/
