@@ -182,10 +182,8 @@ nav, header, main, footer {
 }
 
 .filtres-grid {
-    display: grid;
-    text-align: center;
-    grid-template: 100% / 26% 26% 26% 26%;
-    gap: 15px;
+    display: flex;
+    gap: 20px;
 }
 
 .filtres h1 {
@@ -549,10 +547,6 @@ nav, header, main, footer {
         margin-top: 20px;
         width: 100%;
     }
-    .populaires-cards a {
-        margin: 0;
-        padding: 0;
-    }
 
     .populaires-cards img {
         width: 33%;
@@ -588,9 +582,7 @@ nav, header, main, footer {
     /****** ACTIVITES A MARSEILLE ******/
 
     .activites-card img {
-        
         height: 200px;
-
     }
 
     .activites-txt p {
@@ -665,8 +657,7 @@ nav, header, main, footer {
     /****** SEARCHBAR ******/
 
     .search-form {
-        justify-content: center;
-        margin: 20px 0 0 0;
+        margin: 30px 0 0 20px;
     }
 
     .search-icon {
@@ -693,7 +684,6 @@ nav, header, main, footer {
 
     .filtres {
         margin: 15px 20px;
-
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 20px
@@ -701,22 +691,18 @@ nav, header, main, footer {
 
     .filtres-grid {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
     }
 
     .filtres i {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .filtres-btn {
-        display: flex;
-        flex-basis: 100%;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
         font-size: 14px;
+        flex-basis: 45%;
     }
 
         /****** INFO SECTION ******/
@@ -725,7 +711,7 @@ nav, header, main, footer {
             margin: 0 20px;
         }
 
-            /****** HEBERGEMENTS & POPULAIRES ******/
+    /****** HEBERGEMENTS & POPULAIRES ******/
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -763,12 +749,11 @@ nav, header, main, footer {
         /****** ACTIVITES ******/
 
         .activites-card {
-            background: #FFFFFF;
-            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-            border-radius: 20px;
             margin: 20px 0 0 0;
-            width: 100%;
-            cursor: pointer;
+        }
+
+        .activites-card img {
+            height: 140px;
         }
 
         .cards-container {
