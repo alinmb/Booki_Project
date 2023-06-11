@@ -34,7 +34,10 @@ body {
     box-sizing: border-box;
 }
 
-nav, header, main, footer {
+nav,
+header,
+main,
+footer {
     padding: 0 50px;
 }
 
@@ -367,6 +370,7 @@ nav, header, main, footer {
 .populaires-cards .card-subtitle {
     margin: 0;
 }
+
 .hebergements-cards .card-subtitle {
     margin-bottom: 10px;
 }
@@ -412,8 +416,9 @@ nav, header, main, footer {
     width: 100%;
     cursor: pointer;
 }
+
 .activites-card:last-child {
-     margin-right: 0 !important; 
+    margin-right: 0 !important;
 }
 
 .activites-card img {
@@ -496,7 +501,7 @@ nav, header, main, footer {
         box-sizing: border-box;
         font-size: 15px;
         line-height: 19px;
-        
+
     }
 
     .filtres {
@@ -567,7 +572,7 @@ nav, header, main, footer {
     .populaires-cards {
         display: grid;
         grid-template: 48% / 30% 30% 30%;
-        grid-column-gap: 30px;  
+        grid-column-gap: 30px;
     }
 
 
@@ -605,7 +610,10 @@ nav, header, main, footer {
 
 @media screen and (max-width: 768px) {
 
-    nav, header, main, footer {
+    nav,
+    header,
+    main,
+    footer {
         padding: 0;
     }
 
@@ -613,11 +621,12 @@ nav, header, main, footer {
 
     .nav {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         overflow: hidden;
     }
+
     .nav-logo img {
         padding: 30px;
     }
@@ -625,14 +634,14 @@ nav, header, main, footer {
     .nav-right {
         margin: 0px;
         width: 100%;
-        display: flex;        
+        display: flex;
     }
 
     .nav-right a {
         margin: 0;
         width: 50%;
-        padding: 0 0 14px 0 ;
-        border-bottom: 2px  solid #deebff;
+        padding: 0 0 14px 0;
+        border-bottom: 2px solid #deebff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -641,6 +650,7 @@ nav, header, main, footer {
     .nav-right a:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
+        padding: 0 0 14px 0;
     }
 
     /****** HEADER ******/
@@ -663,6 +673,7 @@ nav, header, main, footer {
     .search-icon {
         display: block;
     }
+
     .search-txt {
         display: none;
     }
@@ -705,11 +716,11 @@ nav, header, main, footer {
         flex-basis: 45%;
     }
 
-        /****** INFO SECTION ******/
+    /****** INFO SECTION ******/
 
-        .info {
-            margin: 0 20px;
-        }
+    .info {
+        margin: 0 20px;
+    }
 
     /****** HEBERGEMENTS & POPULAIRES ******/
 
@@ -722,49 +733,49 @@ nav, header, main, footer {
         border-radius: 0px;
     }
 
-        /****** Populaires ***********/
+    /****** Populaires ***********/
 
-        .populaires {
-            margin-top: 20px;
-        }
-    
-        .populaires-cards {
-            display: flex;
-            flex-direction: column;
-        }
-    
+    .populaires {
+        margin-top: 20px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
     /****** Hebergements ***********/
 
-        .hebergements {
-            width: 100%;
-            background-color: white;
+    .hebergements {
+        width: 100%;
+        background-color: white;
     }
 
     .hebergements-cards {
         display: flex;
         flex-direction: column;
-        grid-row-gap: 20px;
+        gap: 20px;
     }
 
-        /****** ACTIVITES ******/
+    /****** ACTIVITES ******/
 
-        .activites-card {
-            margin: 20px 0 0 0;
-        }
+    .activites-card {
+        margin: 20px 0 0 0;
+    }
 
-        .activites-card img {
-            height: 140px;
-        }
+    .activites-card img {
+        height: 140px;
+    }
 
-        .cards-container {
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+    .cards-container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        }
+    }
 
-        /****** FOOTER *****/
+    /****** FOOTER *****/
 
     .section-footer {
         padding: 10px 30px;
